@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antrian Digital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Jam dan Tanggal -->
+    <div class="header">
+        <span id="datetime"></span>
+    </div>
+
+    <!-- Container Utama -->
+    <div class="container">
+        
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <img src="image/logobpn.png" alt="Logo" class="logo">
+            <h1 style="color: white;">ANTRIAN DIGITAL</h1>
+            <p>Kantor Pertnahan Kabupaten Fakfak</p>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="title">Nomor Antrian</div>
+            <hr>
+            <div class="display" id="currentQueue">0</div>
+            <div class="info">Sedang Diproses</div>
+            <div class="display smaller" id="processingQueue">0</div>
+            <div class="info">Total Antrian: <span id="totalQueue">0</span></div>
+            <hr>
+
+            <!-- Button Group -->
+            <div class="button-group">
+                <button class="btn btn-primary" id="btnAmbil">Ambil Antrian</button>
+                <button class="btn btn-secondary" id="btnNext">Selanjutnya</button>
+                <button class="btn btn-danger" id="btnReset">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Running Text -->
+    <div class="running-text">
+        <span>Silakan mengambil nomor antrian dan menunggu giliran Anda. Terima kasih! - Kantor Pertanahan Kabupaten Fakfak</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

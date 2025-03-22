@@ -1,0 +1,200 @@
+/* Reset default */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* Ubah warna teks pada elemen <p> */
+.sidebar p {
+    color: rgb(255, 255, 255) !important; /* Paksa warna merah */
+    font-size: 15px; /* Perbesar teks biar lebih terlihat */
+    font-weight: bold; /* Tebalkan teks */
+    display: inline-block; /* Agar border sesuai dengan panjang teks */
+    border-bottom: 3px solid rgb(250, 250, 250); /* Warna dan ketebalan garis bawah */
+    padding-bottom: 5px; /* Jarak antara teks dan garis */
+}
+
+/* Background */
+body {
+    background: url('image/wallpaper1.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Jam & Tanggal */
+.header {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px 30px;
+    border-radius: 15px;
+}
+
+/* Container Utama */
+.container {
+    display: flex;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    backdrop-filter: blur(15px);
+    max-width: 1300px;
+    width: 90%;
+    gap: 50px;
+}
+
+/* Sidebar */
+.sidebar {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 25px;
+    
+}
+
+.sidebar h2 {
+    font-size: 34px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.sidebar p {
+    font-size: 22px;
+    color: #333;
+    font-family: 'Great Vibes', cursive;
+}
+
+/* Main Content */
+.main-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: #ffffff;
+}
+
+hr {
+    width: 100%;
+    border: 3px solid #007bff;
+    margin-bottom: 25px;
+}
+
+/* Display Nomor */
+.display {
+    font-size: 100px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    width: 220px;
+}
+
+.smaller {
+    font-size: 60px;
+    padding: 30px;
+}
+
+/* Info Text */
+.info {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #ffffff;
+}
+
+/* Button Container */
+.button-container {
+    margin-top: 50px;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 20px 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #007bff;
+    color: white;
+}
+
+.btn-secondary {
+    background: #17a2b8;
+    color: white;
+}
+
+.btn-danger {
+    background: #dc3545;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Running Text */
+.running-text {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px 0;
+    font-size: 26px;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.running-text span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: runningText 20s linear infinite;
+}
+
+@keyframes runningText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
