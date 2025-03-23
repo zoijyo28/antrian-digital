@@ -63,7 +63,7 @@ document.getElementById("btnReset").addEventListener("click", function () {
     nomorProses = 0;
     totalAntrian = 0;
     update();
-    speakText("Antrian telah direset. komputer ini bakal meledak dalam hitungan 5 detik. 5.. 4.. 3.. 2.. 1... nungguin ya??");
+    speakText("Antrian telah direset. komputer ini bakal meledak dalam hitungan 5 detik. 5.. 4.. 3.. 2.. 1... cuk.. cuk.. cukimay!!");
 });
 
 // Fungsi Menampilkan Jam dan Tanggal
