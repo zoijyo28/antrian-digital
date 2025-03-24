@@ -4,7 +4,7 @@ body, h1, h2, p {
     padding: 0;
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    zoom: 1.5; /* 1.5 berarti 150% lebih besar, bisa juga 0.8 untuk mengecilkan */
+    zoom: 0.5; /* 1.5 berarti 150% lebih besar, bisa juga 0.8 untuk mengecilkan */
 }
 
 /* Ubah warna teks pada elemen <p> */
